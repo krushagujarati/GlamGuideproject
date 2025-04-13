@@ -1,0 +1,17 @@
+.footer {
+    background-color: #491f2e;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(86, 23, 23);
+    margin-top: 60px;
+
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-weight: 500;
+  }
+  

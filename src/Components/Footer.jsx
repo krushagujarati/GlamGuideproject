@@ -1,21 +1,16 @@
-// src/components/Footer.jsx
-import React from 'react';
+import React from "react";
+import "./Footer.css";
 
-
-const Footer = () => {
+function Footer() {
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer">
       <div className="footer-content">
-        <p>&copy; {new Date().getFullYear()} Mango Redesign. All rights reserved.</p>
-        <nav className="footer-nav">
-          <a href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div>About Us</div>
+        <div>Contact</div>
+        <div>Terms & Privacy</div>
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;

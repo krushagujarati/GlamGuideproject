@@ -1,232 +1,47 @@
-/* src/components/FashionLanding.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.fashion-landing {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #faedea; /* Pastel pink background */
-  overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
-}
-
-/* ----------------- HEADER (LOGO + ICONS) ----------------- */
-
-.landing-header {
-  position: absolute;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  z-index: 10;
-}
-
-.brand-logo {
-  width: 60px;
-  height: auto;
-  object-fit: contain;
-}
-
-.header-icons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  color: #222;
-  font-size: 1.2rem;
-}
-
-/* ----------------- MAIN CONTENT ----------------- */
-
-.landing-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  padding: 0 5%;
-}
-
-/* Left info box */
-.product-info-left {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  max-width: 200px;
-  color: #333;
-  animation: fadeInLeft 1.5s ease forwards;
-  opacity: 0;
-  transform: translateX(-50px);
-}
-
-.product-subtitle {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.small-line {
-  width: 30%;
-  height: 2px;
-  background: #222;
-  margin-bottom: 10px;
-}
-
-.product-price {
-  font-size: 1rem;
-  color: #444;
-}
-
-/* Center model container + overlapping text */
-.model-center {
-  position: relative;
-  flex: 1;
-  text-align: center;
-  animation: fadeInUp 1.5s ease forwards;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-.product-title {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Playfair Display', serif;
-  color: #222;
-  z-index: 2;
-  font-size: 3.2rem;
-  line-height: 1;
-}
-
-.label-long {
-  display: block;
-}
-
-.label-dress {
-  display: inline-block;
-  margin-left: 8px;
-  background: #fff;
-  padding: 2px 5px;
-  border-radius: 4px;
-  font-size: 0.9em;
-}
-
-.dress-model {
-  max-height: 80vh;
-  max-width: 100%;
-  object-fit: cover;
-  z-index: 1;
-  position: relative;
-  animation: scaleIn 1.5s ease forwards;
-  opacity: 0;
-  transform: scale(0.9) translateY(20px);
-}
-
-/* Right info box */
-.product-info-right {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  max-width: 200px;
-  color: #333;
-  text-align: right;
-  animation: fadeInRight 1.5s ease forwards;
-  opacity: 0;
-  transform: translateX(50px);
-}
-
-.cta-container {
-  margin-top: 20px;
-}
-
-.cta-button {
-  background: #222;
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  padding: 0.7rem 1.4rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-  background: #fff;
-  color: #222;
-  border: 1px solid #222;
-}
-
-/* ----------------- FOOTER (Catalog) ----------------- */
-
-.landing-footer {
-  position: absolute;
-  bottom: 2rem;
-  left: 4%;
-  font-size: 1.1rem;
-  color: #222;
-  animation: fadeIn 1.5s ease 1s forwards;
-  opacity: 0;
-}
-
-/* --------------- ANIMATIONS --------------- */
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
   }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
+  
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 102, 166, 0.8);
+    padding: 30px;
+    border-radius: 12px;
   }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
   }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
+  
+  .hero-btn {
+    background-color: #fff;
+    color: #ff66a6;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  
+  .hero-btn:hover {
+    background-color: #ff66a6;
+    color: #fff;
   }
-}
-
-@keyframes scaleIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.9) translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+  

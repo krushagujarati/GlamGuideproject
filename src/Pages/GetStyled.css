@@ -1,0 +1,159 @@
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    font-weight: 100;
+    font-family: 'arial', sans-serif;
+    background-color: #f0f0f0; /* A neutral background */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    background-image: url('../Components/Assets/BACK1.jpg'); /* Path to your image */
+    background-size: cover; /* Cover th entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Don't repeat the image */
+    height: 100vh; /* Ensure the background image covers the whole page */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5e503f; /* Dark brown background */
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    z-index: 1000; /* Ensure header stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5e503f; /* Dark brown background */
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    z-index: 1000; /* Ensure footer stays on top */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content container */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px 70px 20px; /* Make room for the header and footer */
+    background: url('../Components/Assets/BACK1.jpg') no-repeat center center; /* Background Image */
+    background-size: cover; /* Cover the entire container */
+    box-sizing: border-box; /* To ensure padding doesn't affect layout */
+}
+
+/* Main form container */
+.styled-container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    align-items: center;
+    position: relative; /* Changed from 'fixed' to 'relative' */
+    z-index: 10; /* Ensure it's above any background elements */
+    margin-top: 80px; /* Added space below the header */
+    margin-left: 500px;
+}
+
+/* Form Title */
+.form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #5e503f;
+    margin-bottom: 30px;
+}
+
+/* Question Layout */
+.question {
+    display: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.question.active {
+    display: block;
+}
+
+/* Input Fields */
+.styled-form input {
+    padding: 12px;
+    border: 2px solid #c6ac8f;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    width: 100%; /* Make input full width */
+}
+
+/* Next Button */
+.next-btn {
+    background-color: #5e503f;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Next Button Hover */
+.next-btn:hover {
+    background-color: #c6ac8f;
+    transform: translateY(-3px);
+}
+
+/* Get Suggestions Button (appears at the end) */
+.get-btn {
+    display: none;
+    background-color: #c6ac8f;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Show Get Suggestions Button when all questions are completed */
+.get-btn.active {
+    display: block;
+}
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
