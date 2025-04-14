@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import GetStyled from "./Pages/GetStyled";
 import Suggestions from "./Pages/Suggestions";
 import Login from "./Pages/Login";
+import SignUp from "./Pages/SignUp";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/suggestions" element={<Suggestions />} />
           <Route path="/get-styled" element={<GetStyled />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
         <Footer />
       </div>

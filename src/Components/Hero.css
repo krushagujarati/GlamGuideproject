@@ -6,7 +6,7 @@
   padding: 60px 30px;
   background-color: #fff;
   height: 100vh; /* Full screen height */
-  background-image: url('./Assets/BG3.jpg'); /* Set your background image */
+  background-image: url('./Assets/BG4.jpg'); /* Set your background image */
   background-size: cover;
   background-position: center;
 }
@@ -69,24 +69,24 @@
 /* Solid button */
 .btn {
   background-color: #030303;  /* walnut brown */
-  color: #8d693d;             /* beige text */
+  color: #ab8f6c;             /* beige text */
   border: none;
 }
 
 .btn:hover {
-  background-color: #8d693d;  /* khaki hover */
+  background-color: #ab8f6c;  /* khaki hover */
   color: #0A0908;             /* dark text */
 }
 
 /* Outline button */
 .btn-outline {
   background-color: transparent;
-  color: #906633;
-  border: 2px solid #5E503F;
+  color: #71604b;
+  border: 2px solid #71604b;
 }
 
 .btn-outline:hover {
-  background-color: #8d693d;  /* khaki hover */
+  background-color: #5E503F;  /* khaki hover */
   color: #0A0908;
 }
 

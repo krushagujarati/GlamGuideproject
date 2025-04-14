@@ -1,0 +1,97 @@
+/* src/pages/Login.css */
+
+.login-container {
+    background: url('../Components/Assets/BG12.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+  }
+  
+  .login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(10, 9, 8, 0.5);
+    z-index: 0;
+  }
+  
+  .login-box {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(245, 245, 220, 0.9); /* beige */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 10px;
+    color: #5E503F;
+  }
+  
+  .login-subtitle {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #0A0908;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .login-form label {
+    font-weight: 500;
+    color: #5E503F;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    border: 1px solid #C6AC8F;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .log-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #5E503F;
+    color: #F5F5DC;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .log-btn:hover {
+    background-color: #C6AC8F;
+    color: #0A0908;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #5E503F;
+  }
+  
+  .signup-link a {
+    color: #0A0908;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
