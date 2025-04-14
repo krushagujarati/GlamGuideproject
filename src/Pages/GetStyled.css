@@ -138,9 +138,77 @@ body {
     margin-top: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    align-items: center;
+    margin-left: 180px;
 }
 
 /* Show Get Suggestions Button when all questions are completed */
 .get-btn.active {
     display: block;
+}
+
+/* Result Display Box */
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f5f5dc;
+    border: 2px solid #c6ac8f;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.result-box h2 {
+    color: #5e503f;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.body-type-text {
+    font-size: 20px;
+    color: #5e503f;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* Result text after suggestions */
+.result-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #5e503f;
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+}
+
+.find-fit-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #5E503F;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .find-fit-btn:hover {
+    background-color: #C6AC8F;
+    color: #0A0908;
+  }
+  
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
