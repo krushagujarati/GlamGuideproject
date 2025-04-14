@@ -17,7 +17,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/suggestions" element={<Suggestions />} />
           <Route path="/get-styled" element={<GetStyled />} />
-          <Route path="/suggestions" element={<Suggestions />} />
           <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />

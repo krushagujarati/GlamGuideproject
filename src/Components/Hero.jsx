@@ -1,15 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Hero.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Hero.css';
 
 function Hero() {
   return (
-    <div className="hero">
-      <img src="/images/hero.jpg" alt="Hero Models" className="hero-img" />
+    <div className="hero-section">
       <div className="hero-text">
-        <h1>It’s Dress Season</h1>
-        <Link to="/get-styled" className="hero-btn">Get Styled</Link>
+        <h1>
+          FIND YOUR EXPRESSIVE<br />
+          <span className="italic">TIMELESS</span> LOOK
+        </h1>
+        <div className="hero-buttons">
+          <Link to="/get-styled" className="btn">Get Styled</Link>
+          <Link to="/suggestions" className="btn btn-outline">Explore Suggestions</Link>
+        </div>
       </div>
+      {/* Remove the multiple images and add a single background image */}
+      <div className="hero-background"></div>
     </div>
   );
 }

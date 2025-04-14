@@ -135,10 +135,11 @@ body {
 
 /* ----------- FOOTER ----------- */
 .footer {
-  background: #382814;
-  color: #fff;
+  background: whitesmoke;
+  color: #420a0a;
   padding: 40px 5%;
   text-align: center;
+  position: relative;
 }
 .footer-content p {
   margin-bottom: 20px;
