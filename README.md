@@ -9,7 +9,7 @@ GlamGuide helps users get personalized outfit recommendations based on body type
 
 - 👗 Personalized styling suggestions
 - 📷 Model-based previews
-- 🧠 AI-driven recommendations
+- 🧠 Body Type recommendations
 - 🎨 Aesthetic and responsive UI
 
 ---
@@ -18,8 +18,6 @@ GlamGuide helps users get personalized outfit recommendations based on body type
 
 - React.js
 - HTML/CSS
-- Gemini API (for AI suggestions)
-- Flask (backend)
 - Firebase / GitHub Pages (for deployment)
 
 ---
