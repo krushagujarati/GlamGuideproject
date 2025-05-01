@@ -1,6 +1,6 @@
 # GlamGuide 💃✨
 
-**Your personal AI-powered fashion stylist.**  
+**Your personal fashion stylist.**  
 GlamGuide helps users get personalized outfit recommendations based on body type, skin tone, and measurements.
 
 ---
